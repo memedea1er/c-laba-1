@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
         puts("Enter a sting to add to a file"); // вывод сообщения для пользователя
         fgets(st, 256, stdin); // ввод текста пользователем
         fp = fopen(argv[1], "r"); // открытие файла
-        char ch; // переменная для записи файла в строку
+        char ch; // переменная для чтения файла
         while (!feof (fp)) { // цикл для чтения файла
             strncat(st, &ch, 1); // добавление символа в строку
             ch = fgetc(fp); // чтение файла посимвольно
